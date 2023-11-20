@@ -42,7 +42,7 @@ class PhoneBook {
     }
 
     public List<Map.Entry<String, ArrayList<Integer>>> getSortedPhoneBook() {
-        List<Map.Entry<String, ArrayList<Integer>>> phoneBookList = new ArrayList(phoneBook.entrySet());
+        List<Map.Entry<String, ArrayList<Integer>>> phoneBookList = new ArrayList <Map.Entry<String, ArrayList<Integer>>> (phoneBook.entrySet());
 
         Collections.sort(phoneBookList, new Comparator<Map.Entry<String, ArrayList<Integer>>>() {
                     @Override
